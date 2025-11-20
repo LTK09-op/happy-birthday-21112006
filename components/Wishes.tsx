@@ -6,7 +6,7 @@ const Wishes: React.FC = () => {
   const [displayedText, setDisplayedText] = useState("");
   const [isOpen, setIsOpen] = useState(false);
   const [showCursor, setShowCursor] = useState(true);
-  const [zIndexAdjustment, setZIndexAdjustment] = useState(false);
+  const [_zIndexAdjustment, setZIndexAdjustment] = useState(false);
 
   useEffect(() => {
     if (isOpen) {
