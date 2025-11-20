@@ -3,9 +3,10 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "scripts": {
+ "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build:fix": "chmod +x ./node_modules/.bin/tsc && chmod +x ./node_modules/.bin/vite",
+    "build": "npm run build:fix && tsc && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
